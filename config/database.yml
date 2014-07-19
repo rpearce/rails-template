@@ -1,0 +1,21 @@
+# NOTE: change database names!
+
+default: &default
+  encoding: unicode
+  adapter: sqlite3
+  pool: 10
+  timeout: 5000
+
+development:
+  <<: *default
+  adapter: postgresql
+  host: localhost
+  port: 5432
+  database: rails_template_development
+
+test:
+  <<: *default
+  adapter: postgresql
+  host: localhost
+  port: 5432
+  database: rails_template_test

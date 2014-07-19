@@ -1,0 +1,19 @@
+!!!
+%html{ lang: 'en' }
+  %head
+    %title #{yield(:title)} | #{t(:app_title)}
+
+    = csrf_meta_tags
+    %meta{ content: 'IE=edge,chrome=1', 'http-equiv' => 'X-UA-Compatible' }
+    %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1' }
+    %meta{ name: 'description', content: '' }
+    %meta{ name: 'author', content: '' }
+    %meta{ name: 'keywords', content: '' }
+
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300'
+    = stylesheet_link_tag 'application', media: 'all'
+  %body
+    = content_for?(:content) ? yield(:content) : yield
+
+    = javascript_include_tag 'application'
+    = yield(:javascript) if content_for?(:javascript)

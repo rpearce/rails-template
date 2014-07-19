@@ -1,0 +1,11 @@
+@mixin pseudo-hide
+  display: inline
+  position: absolute
+  clip: rect(0 0 0 0)
+  outline: none
+
+.is-pseudo-hidden
+  +pseudo-hide
+
+.is-hidden
+  display: none
