@@ -4,6 +4,7 @@ ruby '2.1.2'
 
 gem 'rails', '4.1.4'
 
+gem 'coffee-rails'
 gem 'compass-rails'
 gem 'draper'
 gem 'factory_girl_rails', require: false
@@ -18,6 +19,7 @@ gem 'react-rails'
 gem 'responders'
 gem 'sass-rails'
 gem 'simple_form'
+gem 'sprockets', '2.11.0'
 gem 'uglifier'
 
 # Rails Assets

@@ -54,6 +54,13 @@ GEM
       ffi (~> 1.0, >= 1.0.11)
     chunky_png (1.3.1)
     coderay (1.1.0)
+    coffee-rails (4.0.1)
+      coffee-script (>= 2.2.0)
+      railties (>= 4.0.0, < 5.0)
+    coffee-script (2.3.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.7.1)
     compass (0.12.6)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
@@ -273,6 +280,7 @@ DEPENDENCIES
   binding_of_caller
   bullet
   capybara
+  coffee-rails
   compass-rails
   database_cleaner
   dotenv-rails
@@ -306,6 +314,7 @@ DEPENDENCIES
   simple_form
   spring
   spring-commands-rspec
+  sprockets (= 2.11.0)
   timecop
   uglifier
   webmock
