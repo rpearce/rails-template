@@ -4,6 +4,8 @@ ruby '2.1.5'
 
 gem 'rails', '4.1.8'
 
+gem 'activerecord-postgresql-citext' # REMOVE WHEN MOVING TO 4.2 -- https://github.com/braintree/activerecord-postgresql-citext/pull/4
+
 gem 'browserify-rails', '~> 0.5'
 gem 'coffee-rails'
 gem 'draper'
@@ -18,7 +20,7 @@ gem 'json_spec'
 gem 'permanent_records'
 gem 'pg'
 gem 'puma'
-gem 'react-rails'
+gem 'react-rails', '~> 0.12'
 gem 'responders'
 gem 'sass-rails'
 gem 'simple_form'
@@ -47,7 +49,6 @@ end
 group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'dotenv-rails'
   gem 'immigrant'
   gem 'letter_opener'
   gem 'oauth2'
