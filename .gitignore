@@ -16,4 +16,3 @@ config/secrets.yml
 /.bundle
 /vendor/bundle
 node_modules/
-app/assets/javascripts/build/
