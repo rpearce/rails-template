@@ -35,5 +35,11 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
+  # User Letter Opener for emails
+  config.action_mailer.delivery_method = :letter_opener
+
+  # Use unminified React components
   config.react.variant = :development
+
+  config.react.addons = true
 end

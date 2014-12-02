@@ -1,33 +1,11 @@
 {
   "dependencies": {
-    "jquery": "^2.1.1",
-    "lodash": "^2.4.1",
-    "react": "^0.11.0"
+    "historyjs": "^1.8.0-b2",
+    "qs": "~1.2.1",
+    "fuzzy": "^0.1.0"
   },
   "devDependencies": {
-    "browserify": "^5.9.1",
-    "coffee-script": "^1.7.1",
-    "coffeeify": "^0.7.0",
-    "gulp": "^3.8.6",
-    "jest-cli": "^0.1.13",
-    "vinyl-source-stream": "^0.1.1"
-  },
-  "browserify": {
-    "transform": [
-      "coffeeify"
-    ]
-  },
-  "jest": {
-    "scriptPreprocessor": "spec/javascripts/components/preprocessor.js",
-    "testFileExtensions": [
-      "coffee",
-      "js"
-    ],
-    "unmockedModulePathPatterns": [
-      "node_modules/react"
-    ]
-  },
-  "scripts": {
-    "test": "jest"
+    "browserify": "~> 4.1",
+    "coffeeify": "^0.7.0"
   }
 }

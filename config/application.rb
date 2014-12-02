@@ -21,6 +21,12 @@ module RailsTemplate # NOTE: change me!
     # config.i18n.default_locale = :de
     config.autoload_paths += %W(#{config.root}/app/responders lib)
 
+    config.i18n.available_locales = [:en, :es]
+    config.i18n.default_locale = :en
+    config.i18n.fallbacks = true
+
+    #config.cache_store = :mem_cache_store, ENV.fetch('CACHE_HOST')
+
     config.generators do |g|
       g.test_framework :rspec,
         fixtures: true,
@@ -32,5 +38,7 @@ module RailsTemplate # NOTE: change me!
       g.fixture_replacement :factory_girl, dir: 'spec/factories'
       g.template_engine :haml
     end
+
+    config.browserify_rails.commandline_options = "--fast -t coffeeify --extension=\".js.coffee\""
   end
 end
