@@ -21,11 +21,14 @@ ActiveRecord::Migration.maintain_test_schema!
 include ActionDispatch::TestProcess
 
 RSpec.configure do |config|
-  config.treat_symbols_as_metadata_keys_with_true_values = true
+  # Print the 10 slowest examples and example groups at the
+  # end of the spec run, to help surface which specs are running
+  # particularly slow.
+  config.profile_examples = 10
 
   config.infer_base_class_for_anonymous_controllers = false
 
-  config.order = "random"
+  config.order = :random
 
   config.include FactoryGirl::Syntax::Methods
   config.include Rails.application.routes.url_helpers
