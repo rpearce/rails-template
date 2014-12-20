@@ -29,7 +29,6 @@ gem 'uglifier'
 # Rails Assets
 gem 'rails-assets-console-polyfill'
 gem 'rails-assets-es5-shim'
-gem 'rails-assets-headroom.js'
 gem 'rails-assets-i18next'
 gem 'rails-assets-lodash'
 gem 'rails-assets-normalize.css'

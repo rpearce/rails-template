@@ -11,6 +11,6 @@
     = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300'
     = stylesheet_link_tag 'application', media: 'all'
   %body
-    = content_for?(:content) ? yield(:content) : yield
+    =  yield
     = javascript_include_tag 'application'
     = yield(:javascript) if content_for?(:javascript)

@@ -164,7 +164,6 @@ GEM
       sprockets-rails (~> 2.0)
     rails-assets-console-polyfill (0.1.2)
     rails-assets-es5-shim (4.0.5)
-    rails-assets-headroom.js (0.7.0)
     rails-assets-i18next (1.7.5)
     rails-assets-lodash (2.4.1)
     rails-assets-normalize.css (3.0.2)
@@ -291,7 +290,6 @@ DEPENDENCIES
   rails (= 4.1.8)
   rails-assets-console-polyfill
   rails-assets-es5-shim
-  rails-assets-headroom.js
   rails-assets-i18next
   rails-assets-lodash
   rails-assets-normalize.css

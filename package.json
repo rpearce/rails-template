@@ -1,11 +1,8 @@
 {
   "dependencies": {
-    "historyjs": "^1.8.0-b2",
-    "qs": "~1.2.1",
-    "fuzzy": "^0.1.0"
   },
   "devDependencies": {
-    "browserify": "~> 4.1",
-    "coffeeify": "^0.7.0"
+    "browserify": "~> 7.0.3",
+    "coffeeify": "~> 1.0.0"
   }
 }

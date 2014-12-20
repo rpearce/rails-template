@@ -1,14 +1,6 @@
 @import
-  "compass/css3",
-  "compass/reset",
   "normalize.css",
   "globals/import",
   "modules/import",
   "layouts",
-  "states",
-  "shame";
-
-.fade-in {
-  @include opacity(0);
-  @include animation(fadeIn .1s ease-in 1 .1s forwards);
-}
+  "states";
