@@ -260,7 +260,7 @@ DEPENDENCIES
   activerecord-postgresql-citext
   better_errors
   binding_of_caller
-  browserify-rails (~> 0.5)
+  browserify-rails (~> 0.5.1)
   bullet
   capybara
   capybara-screenshot

@@ -1,10 +1,13 @@
+*, *:before, *:after
+  box-sizing: border-box
+
 body
-  font-family: 'Open Sans', Helvetica, sans-serif
-  font-size: 14px
-  line-height: 1.4
+  font-family: $body-fontFamily
+  font-size: $body-fontSize
+  font-weight: $body-fontWeight
+  line-height: $body-lineHeight
+  letter-spacing: $body-letterSpacing
   color: $body-color
-  font-weight: 300
-  letter-spacing: 0.03rem
 
 body, input, button, .btn
   -webkit-font-smoothing: antialiased
@@ -22,13 +25,5 @@ img
   border: 0
   max-width: 100%
 
-ul
-  list-style: none
-  margin: 0
-  padding: 0
-
 #{$headings}, p
   margin: 0
-
-p
-  padding: 0 0 20px

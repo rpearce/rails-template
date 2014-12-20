@@ -6,7 +6,7 @@ gem 'rails', '4.1.8'
 
 gem 'activerecord-postgresql-citext' # REMOVE WHEN MOVING TO 4.2 -- https://github.com/braintree/activerecord-postgresql-citext/pull/4
 
-gem 'browserify-rails', '~> 0.5'
+gem 'browserify-rails', '~> 0.5.1'
 gem 'coffee-rails'
 gem 'draper'
 gem 'factory_girl_rails', require: false
